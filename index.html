@@ -11,51 +11,131 @@
     <title>Frontend Mentor | Notifications page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
+    <link rel="stylesheet" href="css/styles.css">
 
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/624de654bd.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <main class="grid place-items-center w-full text-gray-700 max-w-4xl mx-auto">
+        <section class="bg-white shadow-md rounded-md p-10">
+            <div class="flex justify-between items-center">
+                <h1 class="text-2xl font-bold">
+                    Notifications <span class="text-sm ml-1 py-1 rounded-md bg-blue-dark text-white px-3">3</span>
+                </h1>
+                <button class="text-gray-600 hover:text-blue-600">Mark all as read</button>
+            </div>
 
-    Notifications 3
+            <section class="mt-10 space-y-3">
+                <div class="bg-blue-light shadow-sm p-5 rounded-md flex items-start hover:bg-gray-50 cursor-pointer">
+                    <div class="w-3/12 md:w-1/12">
+                        <img class="h-12 w-12 rounded-full"
+                            src="https://ui-avatars.com/api/?name=Mark+Webber&background=random&color=fff" alt="">
+                    </div>
+                    <div class="w-9/12 md:w-11/12">
+                        <h3><span class="font-bold">Mark Webber</span> reacted to your recent post <span
+                                class="text-gray-500 font-bold">My first tournament</span>
+                            today! <i class="fa-solid fa-circle ml-3 text-red-500 text-xs"></i></h3>
+                        <h4 class="font-semibold text-gray-400">1m ago</h4>
+                    </div>
+                </div>
 
-    Mark all as read
+                <div class="bg-blue-light shadow-sm p-5 rounded-md flex items-start hover:bg-gray-50 cursor-pointer">
+                    <div class="w-3/12 md:w-1/12">
+                        <img class="h-12 w-12 rounded-full"
+                            src="https://ui-avatars.com/api/?name=Angela+Gray&background=random&color=fff" alt="">
+                    </div>
+                    <div class="w-9/12 md:w-11/12">
+                        <h3><span class="font-bold">Angela Gray</span> followed you <i
+                                class="fa-solid fa-circle ml-3 text-red-500 text-xs"></i></h3>
+                        <h4 class="font-semibold text-gray-400">5m ago</h4>
+                    </div>
+                </div>
 
-    Mark Webber reacted to your recent post My first tournament today!
-    1m ago
+                <div class="bg-blue-light shadow-sm p-5 rounded-md flex items-start hover:bg-gray-50 cursor-pointer">
+                    <div class="w-3/12 md:w-1/12">
+                        <img class="h-12 w-12 rounded-full" src="https://ui-avatars.com/api/?name=
+                            Jacob+Thompson&background=random&color=fff" alt="">
+                    </div>
+                    <div class="w-9/12 md:w-11/12">
+                        <h3><span class="font-bold">Jacob Thompson</span> has joined your group <span
+                                class="text-blue-dark font-bold">Chess Club</span> <i
+                                class="fa-solid fa-circle ml-3 text-red-500 text-xs"></i></h3>
+                        <h4 class="font-semibold text-gray-400">1 day ago</h4>
+                    </div>
+                </div>
 
-    Angela Gray followed you
-    5m ago
+                <div class="shadow-sm p-5 rounded-md flex items-start hover:bg-gray-50 cursor-pointer">
+                    <div class="w-3/12 md:w-1/12">
+                        <img class="h-12 w-12 rounded-full"
+                            src="https://ui-avatars.com/api/?name=Rizky+Hasanuddin&background=random&color=fff" alt="">
+                    </div>
+                    <div class="w-9/12 md:w-11/12">
+                        <div>
+                            <h3><span class="font-bold">Rizky Hasanuddin</span> sent you a private message</h3>
+                            <h4 class="font-semibold text-gray-400">5 days ago</h4>
+                        </div>
+                        <div>
+                            <div
+                                class="bg-white p-3 mt-3 rounded-md font-semibold text-gray-600 border border-gray-300">
+                                Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
+                                I'm already having lots of fun and improving my game.
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    Jacob Thompson has joined your group Chess Club
-    1 day ago
+                <div class="shadow-sm p-5 rounded-md flex items-start justify-between hover:bg-gray-50 cursor-pointer">
+                    <div class="flex items-start space-x-5 w-full">
+                        <div class="w-3/12 md:w-1/12">
+                            <img class="h-12 w-12 rounded-full"
+                                src="https://ui-avatars.com/api/?name=Kimberly+Smith&background=random&color=fff"
+                                alt="">
+                        </div>
+                        <div class="w-9/12 md:w-11/12">
+                            <h3><span class="font-bold">Kimberly Smith</span> commented on your picture</h3>
+                            <h4 class="font-semibold text-gray-400">1 week ago</h4>
+                        </div>
+                    </div>
 
-    Rizky Hasanuddin sent you a private message
-    5 days ago
-    Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and
-    I'm already having lots of fun and improving my game.
+                    <div>
+                        <img src="assets/images/image-chess.webp" alt="" class="h-14 w-14">
+                    </div>
+                </div>
 
-    Kimberly Smith commented on your picture
-    1 week ago
+                <div class="shadow-sm p-5 rounded-md flex items-start hover:bg-gray-50 cursor-pointer">
+                    <div class="w-3/12 md:w-1/12">
+                        <img class="h-12 w-12 rounded-full" src="https://ui-avatars.com/api/?name=
+                            Nathan+Peterson &background=random&color=fff" alt="">
+                    </div>
+                    <div class="w-9/12 md:w-11/12">
+                        <h3><span class="font-bold">Nathan Peterson</span> reacted to your recent post <span
+                                class="text-gray-500 font-bold">5 end-game
+                                strategies to increase your win rate</span></h3>
+                        <h4 class="font-semibold text-gray-400">2 weeks ago</h4>
+                    </div>
+                </div>
 
-    Nathan Peterson reacted to your recent post 5 end-game strategies to increase your win rate
-    2 weeks ago
+                <div class="shadow-sm p-5 rounded-md flex items-start hover:bg-gray-50 cursor-pointer">
+                    <div class="w-3/12 md:w-1/12">
+                        <img class="h-12 w-12 rounded-full"
+                            src="https://ui-avatars.com/api/?name=Anna+Kim&background=random&color=fff" alt="">
+                    </div>
+                    <div class="w-9/12 md:w-11/12">
+                        <h3><span class="font-bold">Anna Kim</span> left the group <span
+                                class="text-blue-dark font-bold">Chess Club</span></h3>
+                        <h4 class="font-semibold text-gray-400">2 weeks ago</h4>
+                    </div>
+                </div>
+            </section>
 
-    Anna Kim left the group Chess Club
-    2 weeks ago
-
-    <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
-    </div>
+            <div class="attribution mt-10">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+                Coded by <a href="#" class="font-semibold">Carlos Adan Gonzalez Jacobo</a>.
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
